@@ -312,6 +312,28 @@ h2 {
   color: var(--ink-soft);
 }
 
+/* ---------- Guide index (homepage) ---------- */
+a.entry.guide-entry {
+  display: grid;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: background 150ms ease, padding-left 150ms ease;
+}
+
+a.entry.guide-entry:hover {
+  background: var(--tint-bg);
+  padding-left: 12px;
+}
+
+a.entry.guide-entry .term {
+  color: var(--ink);
+}
+
+a.entry.guide-entry:hover .term {
+  color: var(--accent-deep);
+}
+
 /* ---------- Numbered steps ---------- */
 .steps {
   list-style: none;

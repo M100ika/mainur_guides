@@ -2,12 +2,104 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="0; url=/aptechka-obshie-pravila">
-<link rel="canonical" href="/aptechka-obshie-pravila">
-<title>Гид от врача</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Гид от врача — понятные ответы о здоровье ребёнка</title>
+<meta name="description" content="Гайды от врача-инфекциониста/педиатра: что делать при температуре, сыпи, отравлении и других тревожных ситуациях — без паники и мифов.">
+<link rel="canonical" href="/">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<p><a href="/aptechka-obshie-pravila">Домашняя аптечка: что действительно нужно</a></p>
-<script>location.replace('/aptechka-obshie-pravila');</script>
+
+<header class="masthead">
+  <div class="container">
+    <a class="brand" href="#top">Гид от врача</a>
+    <nav>
+      <a href="#guides">Гайды</a>
+      <a href="#o-proekte">О проекте</a>
+    </nav>
+    <a class="ig-link" href="https://www.instagram.com/doctor_talgatovna_?igsh=bWFnMjVhcnZ3eXN3" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</header>
+<div class="issue-line">
+  <div class="container">
+    <span>Домашнее здоровье</span>
+    <span>Доказательная медицина</span>
+  </div>
+</div>
+
+<section class="hero" id="top">
+  <div class="container">
+    <div class="eyebrow">Гид по домашнему здоровью</div>
+    <h1>Понятные ответы на тревожные вопросы о здоровье ребёнка</h1>
+    <p class="dek">Температура ночью, странная сыпь, рвота или укус клеща на даче — я собираю здесь короткие гайды с чётким алгоритмом действий, без паники и без мифов «от бабушки». Пишу как врач-инфекционист/педиатр, простыми словами.</p>
+  </div>
+</section>
+
+<section id="guides">
+  <div class="container">
+    <div class="reveal">
+      <h2>Все гайды</h2>
+      <p class="section-lead">Каждый гайд — конкретная тревожная ситуация и понятный план действий.</p>
+    </div>
+    <div class="entry-list">
+      <a class="entry guide-entry reveal" href="/temperatura-rebenok-igraet">
+        <div class="term">Температура 39,5, а ребёнок играет<span class="sub">Когда сбивать, а когда наблюдать</span></div>
+        <div class="desc">Розовая и бледная лихорадка, красные флаги и разрушение мифов про обтирания</div>
+      </a>
+      <a class="entry guide-entry reveal" href="/aptechka-obshie-pravila">
+        <div class="term">Домашняя аптечка<span class="sub">Что действительно нужно</span></div>
+        <div class="desc">Что держать дома, а что зря пылится на полке и копит просрочку</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="cta-inline reveal">
+    📸 Больше разборов реальных случаев, ответы на вопросы из директа и жизнь врача изнутри — в Instagram <a href="https://www.instagram.com/doctor_talgatovna_?igsh=bWFnMjVhcnZ3eXN3" target="_blank" rel="noopener"><strong>@doctor_talgatovna_</strong></a>.
+  </div>
+</div>
+
+<section id="o-proekte">
+  <div class="container">
+    <div class="reveal">
+      <h2>О проекте</h2>
+      <p class="section-lead">Я врач-инфекционист/педиатр. Эти гайды — конспект того, что чаще всего рассказываю на приёме и в директе: без запугивания, но и без замалчивания того, когда действительно нужно к врачу.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="disclaimer">
+  <div class="container">
+    <div class="box">
+      <strong>Важно:</strong> Материалы носят исключительно информационный характер и не заменяют очную консультацию врача. Не занимайтесь самолечением. При ухудшении самочувствия обратитесь к специалисту.
+    </div>
+  </div>
+</footer>
+<div class="site-footer-meta">Гид от врача — материал подготовлен на основе принципов доказательной медицины · <a href="https://www.instagram.com/doctor_talgatovna_?igsh=bWFnMjVhcnZ3eXN3" target="_blank" rel="noopener">Instagram</a></div>
+
+<script>
+(function () {
+  var items = document.querySelectorAll('.reveal');
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    items.forEach(function (el) { el.classList.add('is-visible'); });
+    return;
+  }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+  items.forEach(function (el) { observer.observe(el); });
+})();
+</script>
+
 </body>
 </html>
