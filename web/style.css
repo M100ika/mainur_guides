@@ -224,6 +224,29 @@ h2 {
 
 .callout.warning strong { color: var(--warn-border); }
 
+.flag-list {
+  margin: 12px 0 0;
+  padding-left: 20px;
+}
+
+.flag-list li {
+  margin-bottom: 6px;
+}
+
+/* ---------- Instagram CTA banner ---------- */
+.cta-inline {
+  background: var(--tint-bg);
+  border: 1px solid var(--accent);
+  padding: 16px 20px;
+  margin: 40px 0;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.cta-inline a {
+  color: var(--accent-deep);
+}
+
 /* ---------- Problem list (was 3 rounded cards) ---------- */
 .numbered-list {
   display: grid;
