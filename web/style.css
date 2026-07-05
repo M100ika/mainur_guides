@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-  --paper: #faf6ee;
+  --paper: #fffbeb;
   --paper-raised: #ffffff;
-  --ink: #201d18;
-  --ink-soft: #57503f;
-  --ink-faint: #8a8272;
-  --rule: #ddd3bf;
-  --rule-strong: #201d18;
-  --accent: #a8431f;
-  --accent-deep: #7c3016;
-  --sage: #3f5c46;
-  --sage-bg: #eef1e9;
-  --warn-bg: #f4e6dc;
-  --warn-border: #a8431f;
+  --ink: #1c1917;
+  --ink-soft: #57534e;
+  --ink-faint: #a8a29e;
+  --rule: #e7dfd2;
+  --rule-strong: #1c1917;
+  --accent: #d97706;
+  --accent-deep: #92400e;
+  --tint-bg: #fdecc8;
+  --warn-bg: #fef2f2;
+  --warn-border: #dc2626;
   --measure: 640px;
 }
 
@@ -30,7 +29,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Public Sans", -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: "Golos Text", -apple-system, "Segoe UI", Roboto, sans-serif;
   font-size: 17px;
   line-height: 1.65;
 }
@@ -38,8 +37,8 @@ body {
 a { color: var(--accent); }
 
 h1, h2, h3 {
-  font-family: "Newsreader", Georgia, serif;
-  font-weight: 600;
+  font-family: "PT Serif", Georgia, serif;
+  font-weight: 700;
   color: var(--ink);
   letter-spacing: -0.01em;
 }
@@ -63,8 +62,8 @@ h1, h2, h3 {
 }
 
 .masthead .brand {
-  font-family: "Newsreader", serif;
-  font-weight: 600;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
   font-style: italic;
   font-size: 20px;
   color: var(--ink);
@@ -161,9 +160,9 @@ h1, h2, h3 {
 }
 
 .hero .dek::first-letter {
-  font-family: "Newsreader", serif;
+  font-family: "PT Serif", serif;
   font-size: 3.4em;
-  font-weight: 600;
+  font-weight: 700;
   float: left;
   line-height: 0.82;
   padding: 4px 8px 0 0;
@@ -186,11 +185,11 @@ section:last-of-type { border-bottom: none; }
 }
 
 .kicker .no {
-  font-family: "Newsreader", serif;
+  font-family: "PT Serif", serif;
   font-style: italic;
   font-size: 15px;
   color: var(--accent);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h2 {
@@ -223,7 +222,7 @@ h2 {
   padding: 18px 22px;
 }
 
-.callout.warning strong { color: var(--accent-deep); }
+.callout.warning strong { color: var(--warn-border); }
 
 /* ---------- Problem list (was 3 rounded cards) ---------- */
 .numbered-list {
@@ -241,7 +240,7 @@ h2 {
 }
 
 .numbered-item .num {
-  font-family: "Newsreader", serif;
+  font-family: "PT Serif", serif;
   font-style: italic;
   font-size: 28px;
   color: var(--ink-faint);
@@ -310,11 +309,11 @@ h2 {
 
 .steps li::before {
   content: counter(step, decimal-leading-zero);
-  font-family: "Newsreader", serif;
+  font-family: "PT Serif", serif;
   font-style: italic;
   color: var(--accent);
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* ---------- Myth vs fact ---------- */
@@ -335,7 +334,7 @@ h2 {
 }
 
 .myth-pair .fact {
-  background: var(--sage-bg);
+  background: var(--tint-bg);
 }
 
 .tag {
@@ -348,7 +347,7 @@ h2 {
 }
 
 .myth .tag { color: var(--ink-faint); }
-.fact .tag { color: var(--sage); }
+.fact .tag { color: var(--accent-deep); }
 
 .myth-pair p {
   margin: 0;
@@ -371,8 +370,8 @@ h2 {
 }
 
 .situation-row .who {
-  font-family: "Newsreader", serif;
-  font-weight: 600;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
   font-style: italic;
   font-size: 17px;
 }
@@ -437,7 +436,7 @@ footer.disclaimer {
 
 footer.disclaimer .box {
   font-size: 14px;
-  color: var(--accent-deep);
+  color: #7f1d1d;
 }
 
 footer.disclaimer .box strong { color: var(--ink); }
