@@ -233,6 +233,45 @@ h2 {
   margin-bottom: 6px;
 }
 
+/* ---------- Big stat pull-quote ---------- */
+.stat-block {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  align-items: center;
+  border: 2px solid var(--accent);
+  background: var(--tint-bg);
+  padding: 28px 26px;
+  margin: 32px 0;
+}
+
+.stat-number {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 56px;
+  color: var(--accent-deep);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.stat-label {
+  font-size: 15px;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 560px) {
+  .stat-block { grid-template-columns: 1fr; text-align: left; }
+  .stat-number { font-size: 44px; }
+}
+
+/* ---------- Hero decorative emoji (per-guide visual variety) ---------- */
+.hero-emoji {
+  font-size: 44px;
+  line-height: 1;
+  margin-bottom: 12px;
+  display: block;
+}
+
 /* ---------- Instagram CTA banner ---------- */
 .cta-inline {
   background: var(--tint-bg);
@@ -471,6 +510,30 @@ a.entry.guide-entry:hover .term {
 }
 
 .checklist label { cursor: pointer; }
+
+/* ---------- Sources / citations ---------- */
+.sources {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+}
+
+.sources h3 {
+  font-size: 15px;
+  margin: 0 0 10px;
+}
+
+.sources ol {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 12.5px;
+  color: var(--ink-faint);
+  line-height: 1.6;
+}
+
+.sources li {
+  margin-bottom: 6px;
+}
 
 /* ---------- Disclaimer footer ---------- */
 footer.disclaimer {
